@@ -19,13 +19,13 @@
   "license": "MIT",
   "author": "Evan You",
   "scripts": {
-    "build": "vuepress build doc --temp .temp",
-    "dev": "vuepress dev doc --temp .temp",
+    "build": "vuepress build notes --temp .temp",
+    "dev": "vuepress dev notes --temp .temp",
     "lint-md": "yarn lint-md:style && yarn lint-md:wording",
     "lint-md:style": "remark --quiet --frail .",
-    "lint-md:wording": "textlint doc/**/*.md",
+    "lint-md:wording": "textlint notes/**/*.md",
     "show-help": "vuepress --help",
-    "view-info": "vuepress view-info doc --temp .temp"
+    "view-info": "vuepress view-info notes --temp .temp"
   },
   "devDependencies": {
     "@textlint-rule/textlint-rule-no-unmatched-pair": "^1.0.7",
